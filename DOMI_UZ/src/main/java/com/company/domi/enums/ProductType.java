@@ -1,0 +1,5 @@
+package com.company.domi.enums;
+
+public enum ProductType {
+    Televizorlar,Smartfonlar,Kir_yuvish_mashinalari,Muzlatkichlar,Telefonlar_va_gadjetlar,Yirik_maishiy_texnika,Kichik_maishiy_texnika,Klimat_uskunalari,Tikuv_mashinalari,Ornatiluvchi_texnika,Oshxona_texnikasi,Gozallik_va_salomatlik,Sportga_oid_mahsulotlar,Printerlar_va_skanerlar,Uy_va_ishxona_jixozlari
+}

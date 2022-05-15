@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<h1>Product Add Page</h1>
+<!--/*@thymesVar id="product" type="pdp"*/-->
+<form method="post" action="/product/add" th:object="${product}">
+    <div class="form-group">
+        <label for="maker">Maker</label>
+        <input th:value="${product.maker}" name="maker" type="text" class="form-control" id="maker"
+               placeholder="Maker kirit">
+    </div>
+    <div class="form-group">
+        <label for="model">Model</label>
+        <input th:value="${product.model}" name="model" type="text" class="form-control" id="model"
+               placeholder="Model ni kirit">
+    </div>
+    <div class="form-group">
+        <label for="type">Type</label>
+        <input th:value="${product.type}" name="type" type="text" class="form-control" id="type"
+               placeholder="Type ni kirit">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+</body>
+</html>
